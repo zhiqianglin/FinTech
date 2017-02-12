@@ -40,6 +40,7 @@ def getMerchants(oType, radius):
 
 if __name__=='__main__':
     merchantDict = getMerchants("Restaurants", 1000)
+    json.dump(merchantDict, open("merchants.json", 'w'))
     for item in merchantDict:
         print(item, merchantDict[item])
 
