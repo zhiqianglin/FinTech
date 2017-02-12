@@ -20,33 +20,38 @@ def getLocation():
     lon = j['longitude']
     return str(lat)+','+str(lon)
 
-def getBusinessCat(client, businessName):
-    response = client.get_business(businessName)
-    
-    print(response)
+def getCategory(business):
+    client = getClient()
+    category = set()
+    for name in business:
+        location = business[name]
+        params = {'term': name, 'limit': 1}
+        response = client.search(location, **params)
+        for item in response.businesses:
+            for cat in item.categories:
+                category.add(cat.name)
+    return list(category)
     
 
-def returnInfo(query_results):
+def returnInfo(userTerm):
+    client = getClient()
+    cll = getLocation()
+    userRadius = 1000
+    params = {'term': userTerm, 'radius_filter': userRadius}
+    response = client.search(cll, **params)
     itemDict = defaultdict(dict)
 
-    for item in query_results.businesses:
+    for item in response.businesses:
         itemDict[item.name]['rating'] = item.rating
         itemDict[item.name]['categories'] = item.categories
         itemDict[item.name]['image_url'] = item.image_url
     return itemDict
 
 if __name__=="__main__":
-    client = getClient()
-    cll = getLocation()
     userTerm = 'Chinese'
-    userRadius = 1000
-    params = {'term': userTerm, 'radius_filter': userRadius}
-    response = client.search(cll, **params)
-    itemDict = returnInfo(response)
+    itemDict = returnInfo(userTerm)
     
     for bus in itemDict:
         print(bus, itemDict[bus])
-
-    businessName = 'FIVE GUYS'
-    businessName = 'yelp-san-francisco'
-    getBusinessCat(client, businessName)
+    business = {"five guys":'30269'}
+    getCategory(business)
