@@ -1,4 +1,5 @@
 import requests
+import json
 
 def getTransactions(accountID, headers):
     url = "https://beta.tsysapi.com/sandbox/transaction/"+accountID+"/current"
@@ -11,14 +12,16 @@ def getTransactions(accountID, headers):
 
 def getRewardsValue(accountID, rewardsValue, headers):
     url = "https://beta.tsysapi.com/sandbox/rewards/"+accountID+'/convert/rewards/'+rewardsValue
+    print(url)
+    #data = {'date': "2017-01-25", "type": "PAPERLESS ENROLLMENT"}
     resp = requests.get(url, headers=headers)
     print(resp)
     return resp.json()['dollarValue']
 
 def getRewardBalance(accountID, headers):
     url = "https://beta.tsysapi.com/sandbox/rewards/"+accountID+"/earn/event"
-    resp = requests.get(url, headers=headers)
-    print(resp)
+    data = {"date": "2017-01-25", "type": "PAPERLESS ENROLLMENT"}
+    resp = requests.post(url, headers=headers, data=json.dumps(data))
     return resp.json()['balance']
     
 if __name__=="__main__":
@@ -27,8 +30,11 @@ if __name__=="__main__":
                "Accept":"application/json"}
     accountID = '00000010001'
     getTransactions(accountID, headers)
+
     totalRewards = getRewardBalance(accountID, headers)
     print('Reward total:', totalRewards)
-    rewardValue = getRewardsValue(accountID, totalRewards, headers)
-    print('Reward value:', rewardValue)
+    
+
+    #rewardValue = getRewardsValue(accountID, totalRewards, headers)
+    #print('Reward value:', rewardValue)
     

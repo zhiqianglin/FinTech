@@ -20,32 +20,34 @@ def returnCat(accountID, headers):
     
 def getNearbys(categories, userRadius=1000):
     merchants = set()
+    merchantsAll = defaultdict(dict)
     for cat in categories:
         merchantsNearby = test_yelp.returnInfo(cat, userRadius)
         for merc in merchantsNearby:
-            merchants.add((merc))
-    return list(merchants)
+            merchants.add(merc)
+            merchantsAll.update({merc:merchantsNearby[merc]})
+    return list(merchants), merchantsAll
 
 def rewardMap(rewardFile):
     rewardDict = defaultdict(dict)
-    df = pd.read_csv(rewardFile)
+    df = pd.read_csv(rewardFile, dtype={'accountId':object})
     for index, row in df.iterrows():
-        rewardDict[row['pod']]['Event'] = row['Event']
-        rewardDict[row['pod']]['start_time'] = row['start_time']
-        rewardDict[row['pod']]['end_time'] = row['end_time']
+        rewardDict[(row['pod'],row['accountId'])]['Event'] = row['Event']
+        rewardDict[(row['pod'],row['accountId'])]['start_time'] = row['start_time']
+        rewardDict[(row['pod'],row['accountId'])]['end_time'] = row['end_time']
         # Call tsys api here to translate rewardsEarned to money value
-        rewardDict[row['pod']]['rewardsEarned'] = row['rewardsEarned']
+        rewardDict[(row['pod'],row['accountId'])]['rewardsEarned'] = row['rewardsEarned']
     return rewardDict
 
 def getSim(str1, str2):
     return SequenceMatcher(None, str1, str2).ratio()
     
-def getOffer(merchant, categoryMap):
+def getOffer(merchant, categoryMap, accountID):
     merchantsNoffer = []
     for merc in merchant:
-        for cat in categoryMap:
-            if getSim(merc, cat) >= 0.8:
-                merchantsNoffer.append(cat)
+        for key in categoryMap:
+            if getSim(key[0], merc) >= 0.8 and str(key[1]) == accountID:
+                 merchantsNoffer.append(key)
     return merchantsNoffer
 
 
@@ -61,8 +63,9 @@ def find_category(df, userid):
                                     
 
 if __name__=="__main__":
-    df = pd.read_csv("transactionHistory.csv", header=0)
-    freq = find_category(df, 19911019)
+    df = pd.read_csv("transactionHistory.csv", dtype={'accountId':object}, header=0)
+    accountID = '19920223'
+    freq = find_category(df, accountID)
     sortedFreq = sorted(freq.items(), key=operator.itemgetter(0), reverse=True)
     categories = [item[0] for item in sortedFreq][:3]
     print("Recommended categories:", categories)
@@ -78,12 +81,12 @@ if __name__=="__main__":
     categories = returnCat(accountID, headers)
     print(categories)
     '''
+
     rewardFile = 'rewards.csv'
     categoryMap = rewardMap(rewardFile)
     
-    merchant = getNearbys(categories)
+    merchant, merchantDict = getNearbys(categories)
     print("Corresponding nearby merchants:", merchant)
-    merchantNoffer = getOffer(merchant, categoryMap)
-    
+    merchantNoffer = getOffer(merchant, categoryMap, accountID)
     for merc in merchantNoffer:
-        print("Merchant:", merc, "Offer:", categoryMap[merc]['rewardsEarned'])
+        print("Name:", merc[0], "rating:", merchantDict[merc[0]]['rating'], "imageurl:", merchantDict[merc[0]]['image_url'], "Offer:", categoryMap[merc]['rewardsEarned'])
