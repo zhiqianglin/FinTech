@@ -20,6 +20,12 @@ def getLocation():
     lon = j['longitude']
     return str(lat)+','+str(lon)
 
+def getBusinessCat(client, businessName):
+    response = client.get_business(businessName)
+    
+    print(response)
+    
+
 def returnInfo(query_results):
     itemDict = defaultdict(dict)
 
@@ -40,3 +46,7 @@ if __name__=="__main__":
     
     for bus in itemDict:
         print(bus, itemDict[bus])
+
+    businessName = 'FIVE GUYS'
+    businessName = 'yelp-san-francisco'
+    getBusinessCat(client, businessName)

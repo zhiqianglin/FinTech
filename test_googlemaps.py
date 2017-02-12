@@ -32,8 +32,8 @@ def getLocation():
         
 def getMerchants(oType, radius):
     (lat, lon) = getLocation()
-    myKey = 'AIzaSyDhJNXil5LRFaNO5s-qA6JpMg84i7oXzcw'
-    gmaps = googlemaps.Client(key=myKey)
+    keys = ['AIzaSyDj2JJemKPSFzbJlZvdIHVEvbVxcyAoyew', 'AIzaSyCv8XwOgtN3Zdyr-DQpYngzdJi6WQN03do', 'AIzaSyArQoEGzw0rW75POBqMeh9FaaKnnY9W40w', 'AIzaSyAjvwxHy7AmDVhJ7AM6AVvvJIjxCv0H71Q', 'AIzaSyCNUe9dQKR_-DHJtYij8fYqG3J-vYCeuxM', 'AIzaSyCnB7gWDWX1xFfn6mUDf-NlTCg5_OQrwBQ', 'AIzaSyDyl7V0cMGRoTvGGiQZED46vICz-LH2U30', 'AIzaSyCahZWDKzYu1V6GpXETOeOIJTPuA9Tga6E']
+    gmaps = googlemaps.Client(key=keys[1])
     places_results = gmaps.places(query = 'restaurant', location=(lat, lon), radius=1000, open_now=True)
     return returnInfo(places_results)
 
