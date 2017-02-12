@@ -1,5 +1,9 @@
 import json
 
-merchantDict = json.load(open("merchants.json"))
-for item in merchantDict:
-    print(item, merchantDict[item])
+def getDict():
+    merchantDict = json.load(open("merchants.json"))
+    # for item in merchantDict:
+    #     print(item, merchantDict[item])
+    return merchantDict
+
+# getDict()
