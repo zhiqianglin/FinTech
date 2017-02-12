@@ -58,6 +58,8 @@ def returnInfo(userTerm, userRadius=1000):
         itemDict[item.name]['rating'] = item.rating
         itemDict[item.name]['categories'] = item.categories
         itemDict[item.name]['image_url'] = item.image_url
+        itemDict[item.name]['lat'] = str(item.location.coordinate.latitude)
+        itemDict[item.name]['lon'] = str(item.location.coordinate.longitude)
     return itemDict
 
 if __name__=="__main__":

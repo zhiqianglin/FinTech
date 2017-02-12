@@ -66,13 +66,13 @@ def find_category(df, userid):
 if __name__=="__main__":
     '''
     df = pd.read_csv("transactionHistory.csv", dtype={'accountId':object}, header=0)
-    accountID = '19920223'
+    accountID = '19911019'
     freq = find_category(df, accountID)
     sortedFreq = sorted(freq.items(), key=operator.itemgetter(0), reverse=True)
     categories = [item[0] for item in sortedFreq][:3]
     print("Recommended categories:", categories)
+    '''
     
-
     # Uncomment this part to use API to retrieve 
     headers = {"Authorization":"Bearer 51132146540652",
                "Content-Type": "application/json",
@@ -89,15 +89,13 @@ if __name__=="__main__":
     merchant, merchantDict = getNearbys(categories)
     print("Corresponding nearby merchants:", merchant)
     merchantNoffer = getOffer(merchant, categoryMap, accountID)
-    
-    yaml.dump(merchantDict, open("merchantDict.yml", 'w'))
-    yaml.dump(merchantNoffer, open("merchantNoffer.yml", 'w'))
-    yaml.dump(categoryMap, open("categoryMap.yml", 'w'))
-    '''
-    merchantDict = yaml.load(open('merchantDict.yml'))
-    merchantNoffer = yaml.load(open('merchantNoffer.yml'))
-    categoryMap = yaml.load(open('categoryMap.yml'))
-    for merc in merchantNoffer:
-        print("Name:", merc[0], "rating:", merchantDict[merc[0]]['rating'], "imageurl:", merchantDict[merc[0]]['image_url'], "Offer:", categoryMap[merc]['rewardsEarned'])
-    
 
+    yaml.dump(merchantDict, open("merchantDict2.yml", 'w'))
+    yaml.dump(merchantNoffer, open("merchantNoffer2.yml", 'w'))
+    yaml.dump(categoryMap, open("categoryMap2.yml", 'w'))
+    
+    merchantDict = yaml.load(open('merchantDict2.yml'))
+    merchantNoffer = yaml.load(open('merchantNoffer2.yml'))
+    categoryMap = yaml.load(open('categoryMap2.yml'))
+    for merc in merchantNoffer:
+        print("Name:", merc[0], "rating:", merchantDict[merc[0]]['rating'], "imageurl:", merchantDict[merc[0]]['image_url'], "lat:", merchantDict[merc[0]]['lat'], "lon:", merchantDict[merc[0]]['lon'], "Offer:", categoryMap[merc]['rewardsEarned'])

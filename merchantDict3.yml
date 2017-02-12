@@ -5,16 +5,12 @@ dictitems:
     categories:
     - !!python/object/new:yelp.obj.business.Category [Fast Food, hotdogs]
     image_url: https://s3-media3.fl.yelpcdn.com/bphoto/fryLmvAyxVPHfQfAIZfThg/ms.jpg
-    lat: '33.773643'
-    lon: '-84.398193'
     rating: 4.0
   HB Food Anatomy:
     categories:
     - !!python/object/new:yelp.obj.business.Category [Bakeries, bakeries]
     - !!python/object/new:yelp.obj.business.Category [Sandwiches, sandwiches]
     image_url: https://s3-media2.fl.yelpcdn.com/bphoto/TSO8RHXJIwFlt6mB8moZsw/ms.jpg
-    lat: '33.7806777954102'
-    lon: '-84.3979721069336'
     rating: 4.0
   Highland Bakery:
     categories:
@@ -22,8 +18,6 @@ dictitems:
     - !!python/object/new:yelp.obj.business.Category [Breakfast & Brunch, breakfast_brunch]
     - !!python/object/new:yelp.obj.business.Category [Bakeries, bakeries]
     image_url: https://s3-media1.fl.yelpcdn.com/bphoto/pb8tg3wfAnHmosX8mjFpAg/ms.jpg
-    lat: '33.7626762390137'
-    lon: '-84.3975067138672'
     rating: 3.0
   Java World Coffee Cart:
     categories:
@@ -31,36 +25,26 @@ dictitems:
     - !!python/object/new:yelp.obj.business.Category [Breakfast & Brunch, breakfast_brunch]
     - !!python/object/new:yelp.obj.business.Category [Bagels, bagels]
     image_url: https://s3-media2.fl.yelpcdn.com/bphoto/eSYQRDxUL6QOaBhdPq3QmA/ms.jpg
-    lat: '33.777448'
-    lon: '-84.39737'
     rating: 4.5
   Satto Thai & Sushi Bar:
     categories:
     - !!python/object/new:yelp.obj.business.Category [Sushi Bars, sushi]
     - !!python/object/new:yelp.obj.business.Category [Thai, thai]
     image_url: https://s3-media1.fl.yelpcdn.com/bphoto/LvEQIqcYZ-71IhsAFcdv2Q/ms.jpg
-    lat: '33.7732583'
-    lon: '-84.4041507'
     rating: 3.5
   Subway:
     categories:
     - !!python/object/new:yelp.obj.business.Category [Fast Food, hotdogs]
     - !!python/object/new:yelp.obj.business.Category [Sandwiches, sandwiches]
     image_url: null
-    lat: '33.7779083'
-    lon: '-84.3962402'
     rating: 2.0
   Wawa Wing:
     categories:
     - !!python/object/new:yelp.obj.business.Category [Chicken Wings, chicken_wings]
     image_url: null
-    lat: '33.77218'
-    lon: '-84.4019299'
     rating: 1.5
   Wingnuts:
     categories:
     - !!python/object/new:yelp.obj.business.Category [Chicken Wings, chicken_wings]
     image_url: https://s3-media3.fl.yelpcdn.com/bphoto/CPXnOesDOA-d_1V9qnC67g/ms.jpg
-    lat: '33.7732971414884'
-    lon: '-84.4040697813034'
     rating: 2.5
