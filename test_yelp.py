@@ -20,6 +20,20 @@ def getLocation():
     lon = j['longitude']
     return str(lat)+','+str(lon)
 
+def getCategory_new(business):
+    client = getClient()
+    category = []
+    for item in business:
+        location = item[1]
+        params = {'term': item[0], 'limit': 1}
+        response = client.search(location, **params)
+        for item in response.businesses:
+            for cat in item.categories:
+                category.append(cat.name)
+    return category
+
+
+
 def getCategory(business):
     client = getClient()
     category = set()
