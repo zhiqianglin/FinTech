@@ -1,0 +1,60 @@
+accountId,pod,Event,start_time,end_time,rewardsEarned,Reason,Accumulable,Fast food,Coffee & tea,Sandwiches,Vegetarian,Bakeries,Donuts
+19680728,Blue Donkey Coffee,Purchase anything,6,9,2000,Royalty,1,0,1,0,0,0,0
+19680728,Blue Donkey Coffee,Order muffin,6,9,3000,Promotion offer,1,0,1,0,0,0,0
+19680728,Caribou Coffee,Order espresso,6,9,5000,Promotion offer,1,0,1,0,0,0,0
+19680728,Caribou Coffee,Purchase anything,6,9,3000,Royalty,1,0,1,0,0,0,0
+19680728,Herban Fix - Vegan Kitchen,Order 1 entrée,17,18,8000,Promotion offer,1,0,0,0,1,0,0
+19680728,Moes,Order Burrito,11,13,25000,Monday special,1,0,0,0,0,0,0
+19680728,Rays,Happy Hour,17,19,8000,Happy Hour,1,0,0,0,0,0,0
+19680728,Subway,Order special sandwich,0,24,30000,Weekly special,1,0,0,1,0,0,0
+19680728,Sweet Hut Bakery & Cafe,Order cupcake,6,9,2000,Promotion offer,1,0,1,0,0,1,0
+19680728,Tin Drum Asian Kitchen,Order jerk chicken taco,0,24,20000,Promotion new dish,1,0,0,0,0,0,0
+19680728,Vge Cafe - Midtown Atlanta,Order 1 entrée,16,20,7000,Promotion offer,1,0,0,0,1,0,0
+19680728,Vitality Bowls - Atlanta,Order cupcake,6,9,4000,Promotion offer,1,0,1,0,0,0,0
+19680728,Waffle House,Order entrée,15,18,10000,Off peak,1,0,0,0,0,0,0
+19680728,Sublime Donut,Download app,14,24,7000,Promotion offer,1,0,1,0,0,1,0
+19680728,Chick-fil-A,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Mcdonalds,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Burger King,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Chick-fil-A,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Mcdonalds,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Burger King,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Chick-fil-A,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Mcdonalds,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19680728,Burger King,Purchase anything,0,24,1800,Promotion offer,1,1,0,0,0,0,0
+19911019,Blue Donkey Coffee,Order muffin,6,9,3000,Promotion offer,1,0,1,0,0,0,0
+19911019,Caribou Coffee,Order espresso,6,9,5000,Promotion offer,1,0,1,0,0,0,0
+19911019,Herban Fix - Vegan Kitchen,Order 1 entrée,17,18,8000,Promotion offer,1,0,0,0,1,0,0
+19911019,Moes,Order Burrito,11,13,25000,Monday special,1,0,0,0,0,0,0
+19911019,Rays,Happy Hour,17,19,8000,Happy Hour,1,0,0,0,0,0,0
+19911019,Rays,Order Calzone,0,24,20000,Promotion new dish,1,0,0,0,0,0,0
+19911019,Starbucks,Download app,0,24,6000,Promotion,0,0,1,0,0,1,0
+19911019,Starbucks,Order coffee,15,17,6000,Off peak,1,0,1,0,0,1,0
+19911019,Subway,Order special sandwich,0,24,30000,Weekly special,1,0,0,1,0,0,0
+19911019,Sweet Hut Bakery & Cafe,Order bakery,0,24,5000,Student offer,0,0,1,0,0,1,0
+19911019,Sweet Hut Bakery & Cafe,Order cupcake,6,9,2000,Promotion offer,1,0,1,0,0,1,0
+19911019,Sweet Hut Bakery & Cafe,Order milk tea,0,24,5000,Promotion offer,0,0,1,0,0,1,0
+19911019,Tin Drum Asian Kitchen,Order jerk chicken taco,0,24,20000,Promotion new dish,1,0,0,0,0,0,0
+19911019,Vge Cafe - Midtown Atlanta,Order 1 entrée,16,20,7000,Promotion offer,1,0,0,0,1,0,0
+19911019,Vitality Bowls - Atlanta,Order cupcake,6,9,4000,Promotion offer,1,0,1,0,0,0,0
+19911019,Waffle House,Order entrée,15,18,10000,Off peak,1,0,0,0,0,0,0
+19911019,Waffle House,Order waffle,0,24,30000,Bank card special offer,1,0,0,0,0,0,0
+19911019,Sublime Donut,Download app,14,24,7000,Promotion offer,1,0,1,0,0,1,0
+19920223,Blue Donkey Coffee,Order muffin,6,9,3000,Promotion offer,1,0,1,0,0,0,0
+19920223,Caribou Coffee,Order espresso,6,9,5000,Promotion offer,1,0,1,0,0,0,0
+19920223,Chuck Famous,Order sandwich,0,24,50000,Royalty,1,0,0,1,0,0,0
+19920223,Herban Fix - Vegan Kitchen,Order 1 entrée,17,18,8000,Promotion offer,1,0,0,0,1,0,0
+19920223,Moes,Order Burrito,11,13,25000,Monday special,1,0,0,0,0,0,0
+19920223,Rays,Happy Hour,17,19,8000,Happy Hour,1,0,0,0,0,0,0
+19920223,Rays,Order Calzone,0,24,20000,Promotion new dish,1,0,0,0,0,0,0
+19920223,Starbucks,Download app,0,24,6000,Promotion,0,0,1,0,0,1,0
+19920223,Starbucks,Order coffee,15,17,6000,Off peak,1,0,1,0,0,1,0
+19920223,Subway,Order special sandwich,0,24,30000,Weekly special,1,0,0,1,0,0,0
+19920223,Sweet Hut Bakery & Cafe,Order cupcake,6,9,2000,Promotion offer,1,0,1,0,0,1,0
+19920223,Sweet Hut Bakery & Cafe,Order milk tea,0,24,5000,Promotion offer,1,0,1,0,0,1,0
+19920223,Tin Drum Asian Kitchen,Order fountain drink,0,24,50000,Royalty,1,0,1,0,0,0,0
+19920223,Tin Drum Asian Kitchen,Order jerk chicken taco,0,24,20000,Promotion new dish,1,0,0,0,0,0,0
+19920223,Vge Cafe - Midtown Atlanta,Order 1 entrée,16,20,7000,Promotion offer,1,0,0,0,1,0,0
+19920223,Vitality Bowls - Atlanta,Order cupcake,6,9,4000,Promotion offer,1,0,1,0,0,0,0
+19920223,Waffle House,Order entrée,15,18,10000,Off peak,1,0,0,0,0,0,0
+19920223,Sublime Donut,Download app,14,24,7000,Promotion offer,1,0,1,0,0,1,1
