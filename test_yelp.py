@@ -33,10 +33,9 @@ def getCategory(business):
     return list(category)
     
 
-def returnInfo(userTerm):
+def returnInfo(userTerm, userRadius=1000):
     client = getClient()
     cll = getLocation()
-    userRadius = 1000
     params = {'term': userTerm, 'radius_filter': userRadius}
     response = client.search(cll, **params)
     itemDict = defaultdict(dict)

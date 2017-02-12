@@ -5,6 +5,7 @@ def getTransactions(accountID, headers):
     resp = requests.get(url, headers=headers)
     print(resp.json())
     for item in resp.json()['transactions']:
+        # potentially can return merchant category code
         print('{} {}'.format(item['merchant']['name'], item['amount']['value']))
     return resp
 
