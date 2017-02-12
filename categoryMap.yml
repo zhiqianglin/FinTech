@@ -1,0 +1,135 @@
+!!python/object/apply:collections.defaultdict
+args: [!!python/name:builtins.dict '']
+dictitems:
+  ? !!python/tuple [Blue Donkey Coffee, '00000010001']
+  : {Event: Order muffin, end_time: 9, rewardsEarned: 3000, start_time: 6}
+  ? !!python/tuple [Blue Donkey Coffee, '19680728']
+  : {Event: Order muffin, end_time: 9, rewardsEarned: 3000, start_time: 6}
+  ? !!python/tuple [Blue Donkey Coffee, '19911019']
+  : {Event: Order muffin, end_time: 9, rewardsEarned: 3000, start_time: 6}
+  ? !!python/tuple [Blue Donkey Coffee, '19920223']
+  : {Event: Order muffin, end_time: 9, rewardsEarned: 3000, start_time: 6}
+  ? !!python/tuple [Burger King, '00000010001']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Burger King, '19680728']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Burger King, '19920223']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Caribou Coffee, '00000010001']
+  : {Event: Order espresso, end_time: 9, rewardsEarned: 5000, start_time: 6}
+  ? !!python/tuple [Caribou Coffee, '19680728']
+  : {Event: Purchase anything, end_time: 9, rewardsEarned: 3000, start_time: 6}
+  ? !!python/tuple [Caribou Coffee, '19911019']
+  : {Event: Order espresso, end_time: 9, rewardsEarned: 5000, start_time: 6}
+  ? !!python/tuple [Caribou Coffee, '19920223']
+  : {Event: Order espresso, end_time: 9, rewardsEarned: 5000, start_time: 6}
+  ? !!python/tuple [Chick-fil-A, '00000010001']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Chick-fil-A, '19680728']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Chick-fil-A, '19920223']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Chuck Famous, '00000010001']
+  : {Event: Order sandwich, end_time: 24, rewardsEarned: 50000, start_time: 0}
+  ? !!python/tuple [Chuck Famous, '19920223']
+  : {Event: Order sandwich, end_time: 24, rewardsEarned: 50000, start_time: 0}
+  ? !!python/tuple [Ferst Place, '00000010001']
+  : {Event: Download app, end_time: 24, rewardsEarned: 2000, start_time: 0}
+  ? !!python/tuple [Ferst Place, '19920223']
+  : {Event: Download app, end_time: 24, rewardsEarned: 2000, start_time: 0}
+  ? !!python/tuple [Herban Fix - Vegan Kitchen, '00000010001']
+  : {Event: Order 1 entree, end_time: 18, rewardsEarned: 8000, start_time: 17}
+  ? !!python/tuple [Herban Fix - Vegan Kitchen, '19680728']
+  : {Event: Order 1 entree, end_time: 18, rewardsEarned: 8000, start_time: 17}
+  ? !!python/tuple [Herban Fix - Vegan Kitchen, '19911019']
+  : {Event: Order 1 entree, end_time: 18, rewardsEarned: 8000, start_time: 17}
+  ? !!python/tuple [Herban Fix - Vegan Kitchen, '19920223']
+  : {Event: Order 1 entree, end_time: 18, rewardsEarned: 8000, start_time: 17}
+  ? !!python/tuple [Highland Bakery, '00000010001']
+  : {Event: Download app, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Highland Bakery, '19920223']
+  : {Event: Download app, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Mcdonalds, '00000010001']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Mcdonalds, '19680728']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Mcdonalds, '19920223']
+  : {Event: Purchase anything, end_time: 24, rewardsEarned: 1800, start_time: 0}
+  ? !!python/tuple [Moes, '00000010001']
+  : {Event: Order Burrito, end_time: 13, rewardsEarned: 25000, start_time: 11}
+  ? !!python/tuple [Moes, '19680728']
+  : {Event: Order Burrito, end_time: 13, rewardsEarned: 25000, start_time: 11}
+  ? !!python/tuple [Moes, '19911019']
+  : {Event: Order Burrito, end_time: 13, rewardsEarned: 25000, start_time: 11}
+  ? !!python/tuple [Moes, '19920223']
+  : {Event: Order Burrito, end_time: 13, rewardsEarned: 25000, start_time: 11}
+  ? !!python/tuple [Rays, '00000010001']
+  : {Event: Order Calzone, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Rays, '19680728']
+  : {Event: Happy Hour, end_time: 19, rewardsEarned: 8000, start_time: 17}
+  ? !!python/tuple [Rays, '19911019']
+  : {Event: Order Calzone, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Rays, '19920223']
+  : {Event: Order Calzone, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Starbucks, '00000010001']
+  : {Event: Order coffee, end_time: 17, rewardsEarned: 6000, start_time: 15}
+  ? !!python/tuple [Starbucks, '19911019']
+  : {Event: Order coffee, end_time: 17, rewardsEarned: 6000, start_time: 15}
+  ? !!python/tuple [Starbucks, '19920223']
+  : {Event: Order coffee, end_time: 17, rewardsEarned: 6000, start_time: 15}
+  ? !!python/tuple [Sublime Donut, '00000010001']
+  : {Event: Download app, end_time: 24, rewardsEarned: 7000, start_time: 14}
+  ? !!python/tuple [Sublime Donut, '19680728']
+  : {Event: Download app, end_time: 24, rewardsEarned: 7000, start_time: 14}
+  ? !!python/tuple [Sublime Donut, '19911019']
+  : {Event: Download app, end_time: 24, rewardsEarned: 7000, start_time: 14}
+  ? !!python/tuple [Sublime Donut, '19920223']
+  : {Event: Download app, end_time: 24, rewardsEarned: 7000, start_time: 14}
+  ? !!python/tuple [Subway, '00000010001']
+  : {Event: Order special sandwich, end_time: 24, rewardsEarned: 30000, start_time: 0}
+  ? !!python/tuple [Subway, '19680728']
+  : {Event: Order special sandwich, end_time: 24, rewardsEarned: 30000, start_time: 0}
+  ? !!python/tuple [Subway, '19911019']
+  : {Event: Order special sandwich, end_time: 24, rewardsEarned: 30000, start_time: 0}
+  ? !!python/tuple [Subway, '19920223']
+  : {Event: Order special sandwich, end_time: 24, rewardsEarned: 30000, start_time: 0}
+  ? !!python/tuple [Sweet Hut Bakery & Cafe, '00000010001']
+  : {Event: Order milk tea, end_time: 24, rewardsEarned: 5000, start_time: 0}
+  ? !!python/tuple [Sweet Hut Bakery & Cafe, '19680728']
+  : {Event: Order cupcake, end_time: 9, rewardsEarned: 2000, start_time: 6}
+  ? !!python/tuple [Sweet Hut Bakery & Cafe, '19911019']
+  : {Event: Order milk tea, end_time: 24, rewardsEarned: 5000, start_time: 0}
+  ? !!python/tuple [Sweet Hut Bakery & Cafe, '19920223']
+  : {Event: Order milk tea, end_time: 24, rewardsEarned: 5000, start_time: 0}
+  ? !!python/tuple [Tin Drum Asian Kitchen, '00000010001']
+  : {Event: Order jerk chicken taco, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Tin Drum Asian Kitchen, '19680728']
+  : {Event: Order jerk chicken taco, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Tin Drum Asian Kitchen, '19911019']
+  : {Event: Order jerk chicken taco, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Tin Drum Asian Kitchen, '19920223']
+  : {Event: Order jerk chicken taco, end_time: 24, rewardsEarned: 20000, start_time: 0}
+  ? !!python/tuple [Vge Cafe - Midtown Atlanta, '00000010001']
+  : {Event: Order 1 entree, end_time: 20, rewardsEarned: 7000, start_time: 16}
+  ? !!python/tuple [Vge Cafe - Midtown Atlanta, '19680728']
+  : {Event: Order 1 entree, end_time: 20, rewardsEarned: 7000, start_time: 16}
+  ? !!python/tuple [Vge Cafe - Midtown Atlanta, '19911019']
+  : {Event: Order 1 entree, end_time: 20, rewardsEarned: 7000, start_time: 16}
+  ? !!python/tuple [Vge Cafe - Midtown Atlanta, '19920223']
+  : {Event: Order 1 entree, end_time: 20, rewardsEarned: 7000, start_time: 16}
+  ? !!python/tuple [Vitality Bowls - Atlanta, '00000010001']
+  : {Event: Order cupcake, end_time: 9, rewardsEarned: 4000, start_time: 6}
+  ? !!python/tuple [Vitality Bowls - Atlanta, '19680728']
+  : {Event: Order cupcake, end_time: 9, rewardsEarned: 4000, start_time: 6}
+  ? !!python/tuple [Vitality Bowls - Atlanta, '19911019']
+  : {Event: Order cupcake, end_time: 9, rewardsEarned: 4000, start_time: 6}
+  ? !!python/tuple [Vitality Bowls - Atlanta, '19920223']
+  : {Event: Order cupcake, end_time: 9, rewardsEarned: 4000, start_time: 6}
+  ? !!python/tuple [Waffle House, '00000010001']
+  : {Event: Order entree, end_time: 18, rewardsEarned: 10000, start_time: 15}
+  ? !!python/tuple [Waffle House, '19680728']
+  : {Event: Order entree, end_time: 18, rewardsEarned: 10000, start_time: 15}
+  ? !!python/tuple [Waffle House, '19911019']
+  : {Event: Order waffle, end_time: 24, rewardsEarned: 30000, start_time: 0}
+  ? !!python/tuple [Waffle House, '19920223']
+  : {Event: Order entree, end_time: 18, rewardsEarned: 10000, start_time: 15}

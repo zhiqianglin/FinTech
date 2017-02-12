@@ -1,4 +1,5 @@
 import test_tsys
+import yaml
 import operator
 import test_yelp
 from difflib import SequenceMatcher
@@ -63,6 +64,7 @@ def find_category(df, userid):
                                     
 
 if __name__=="__main__":
+    '''
     df = pd.read_csv("transactionHistory.csv", dtype={'accountId':object}, header=0)
     accountID = '19920223'
     freq = find_category(df, accountID)
@@ -70,7 +72,7 @@ if __name__=="__main__":
     categories = [item[0] for item in sortedFreq][:3]
     print("Recommended categories:", categories)
     
-    '''
+
     # Uncomment this part to use API to retrieve 
     headers = {"Authorization":"Bearer 51132146540652",
                "Content-Type": "application/json",
@@ -80,7 +82,6 @@ if __name__=="__main__":
     # These returned categories are then used to make csv data file
     categories = returnCat(accountID, headers)
     print(categories)
-    '''
 
     rewardFile = 'rewards.csv'
     categoryMap = rewardMap(rewardFile)
@@ -88,5 +89,15 @@ if __name__=="__main__":
     merchant, merchantDict = getNearbys(categories)
     print("Corresponding nearby merchants:", merchant)
     merchantNoffer = getOffer(merchant, categoryMap, accountID)
+    
+    yaml.dump(merchantDict, open("merchantDict.yml", 'w'))
+    yaml.dump(merchantNoffer, open("merchantNoffer.yml", 'w'))
+    yaml.dump(categoryMap, open("categoryMap.yml", 'w'))
+    '''
+    merchantDict = yaml.load(open('merchantDict.yml'))
+    merchantNoffer = yaml.load(open('merchantNoffer.yml'))
+    categoryMap = yaml.load(open('categoryMap.yml'))
     for merc in merchantNoffer:
         print("Name:", merc[0], "rating:", merchantDict[merc[0]]['rating'], "imageurl:", merchantDict[merc[0]]['image_url'], "Offer:", categoryMap[merc]['rewardsEarned'])
+    
+
